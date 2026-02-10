@@ -284,6 +284,7 @@ const monthlyStudentCount = await Student.aggregate([
       _id: null,
       totalCount: { $sum: 1 },
     },
+    
   },
 ]);
 const totalPending = await FeeStructure.aggregate([
